@@ -25,9 +25,21 @@
       <button onclick="window.location.href='/discord/'">Discord</button>
       <button onclick="window.location.href='/pages/'">Pages</button>
     </div>
-    <div id="paragraph"><br>
-      <p class="border"><br>There is currently no public bots<br><br>(all bots are private at this time or offline.)<br><br></p><br> 
+    <br> 
+    <p style="font-family: Arial, Helvetica, sans-serif;}">This is a list of all of my discord bot projects.<br><br>you will be directed to the corresponding github repo</p>
+    <p style="border-style: inset; border-radius: 12px; text-align: center; width: 80%; margin: auto; border-color: #2e0066; background: #2e0066; align-items: center; display: flex; flex-direction: column;">
+      <br><toc id="ticketbot">Ticket Bot</toc><br><br>
+    </p>
+    
     </div>
   </main>
 </body>
 </html>
+
+<script>
+document.getElementById("ticketbot").addEventListener("click", function() {
+  window.location.href = "/dev/bots/ticketbot/";
+});
+
+
+</script>
