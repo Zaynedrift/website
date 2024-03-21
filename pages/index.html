@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Zaynedrift | Pages">
+  <meta property="og:description" content="a list of the website's pages">
+  <meta property="og:image" content="https://zaynedrift.replit.app/preview.jpg">
+  <meta property="og:url" content="https://zaynedrift.replit.app/pages/">
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Zaynedrift | Pages</title>
+</head>
+
+<body>
+  <main>
+    <h1>Pages</h1>
+    <div class="buttons">
+      <button onclick="window.location.href='/'">Home</button>
+      <button onclick="window.location.href='/about/'">About Me</button>
+      <button onclick="window.location.href='/dev/'">Developer</button>
+      <button onclick="window.location.href='/music/'">Music</button>
+      <button onclick="window.location.href='/social/'">Socials</button>
+      <button onclick="window.location.href='/discord/'">Discord</button>
+      <button onclick="window.location.href='/pages/'">Pages</button>
+    </div>
+
+    <div id="paragraph"><br>
+      <p class="border"><br>This is the list for pages on this website<br>that are only found here:<br>Credits and Privacy Policy.<br><br>(Maybe more pages coming soon)<br><br></p><br>
+      <p style="border-style: inset; border-radius: 12px; text-align: center; width: 80%; margin: auto; border-color: #2e0066; background: #2e0066; align-items: center; display: flex; flex-direction: column;">
+        <br><toc id="credits">Credits</toc>
+        <br><toc id="privacy">Privacy Policy</toc><br></p><br><br>
+    </div>
+  </main>
+</body>
+
+</html>
+
+<script>
+document.getElementById("credits").addEventListener("click", function() {
+  window.location.href = "/credits/";
+});
+
+document.getElementById("privacy").addEventListener("click", function() {
+  window.location.href = "/privacy/";
+});
+</script>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Zaynedrift | Developer">
+  <meta property="og:description" content="Zaynedrift's Developer Page">
+  <meta property="og:image" content="https://zaynedrift.replit.app/preview.jpg">
+  <meta property="og:url" content="https://zaynedrift.replit.app/dev/">
+  <title>Zaynedrift | Developer</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <main>
+    <h1>Developer</h1>
+    <div class="buttons">
+      <button onclick="window.location.href='/'">Home</button>
+      <button onclick="window.location.href='/about/'">About Me</button>
+      <button onclick="window.location.href='/dev/'">Developer</button>
+      <button onclick="window.location.href='/music/'">Music</button>
+      <button onclick="window.location.href='/social/'">Socials</button>
+      <button onclick="window.location.href='/discord/'">Discord</button>
+      <button onclick="window.location.href='/pages/'">Pages</button>
+    </div>
+
+    <div id="paragraph">
+      <p><br>I program in Python, HTML, CSS and JS<br><br>Some Projects are not provided<br>
+      </p>
+      <p style="border-style: inset; border-radius: 12px; text-align: center; width: 80%; margin: auto; border-color: #2e0066; background: #2e0066; align-items: center; display: flex; flex-direction: column;">
+        <br><toc id="bot">Discord Bots</toc><br>
+        <br><toc id="web">Websites</toc><br>
+        <br><toc id="feat">Featured</toc><br><br>
+        <br><toc id="othr">Other Projects</toc><br><br>
+      </p>
+    </div>
+  </main>
+</body>
+
+</html>
+
+<script>
+document.getElementById("bot").addEventListener("click", function() {
+  window.location.href = "/dev/bots/";
+});
+
+document.getElementById("web").addEventListener("click", function() {
+  window.location.href = "/dev/websites/";
+});
+
+document.getElementById("feat").addEventListener("click", function() {
+  window.location.href = "/dev/featured/";
+});
+
+document.getElementById("othr").addEventListener("click", function() {
+  window.location.href = "/dev/others/";
+});
+</script>

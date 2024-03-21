@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Zaynedrift | Music">
+  <meta property="og:description" content="Zaynedrift's music page">
+  <meta property="og:image" content="https://zaynedrift.replit.app/preview.jpg">
+  <meta property="og:url" content="https://zaynedrift.replit.app/music/">
+  <title>Zaynedrift | Music</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <main>
+    <h1>Music</h1>
+    <div class="buttons">
+      <button onclick="window.location.href='/'">Home</button>
+      <button onclick="window.location.href='/about/'">About Me</button>
+      <button onclick="window.location.href='/dev/'">Developer</button>
+      <button onclick="window.location.href='/music/'">Music</button>
+      <button onclick="window.location.href='/social/'">Socials</button>
+      <button onclick="window.location.href='/discord/'">Discord</button>
+      <button onclick="window.location.href='/pages/'">Pages</button>
+    </div>
+    <br><br>
+    <div class="icon-container">
+      <a href="https://open.spotify.com/artist/5tN4WMZWV3DjbXhHPGchQF" target="_blank"><img class="icon" src="https://zaynedrift.replit.app/images/icons/spotify.png" alt="Spotify"></a>
+      <a href="https://music.apple.com/us/artist/zaynedrift/1666506879" target="_blank"><img class="icon" src="https://zaynedrift.replit.app/images/icons/applemusic.png" alt="Apple Music"></a>
+      <a href="https://www.youtube.com/channel/UCkXoZUiKofz75MXrQOfB1SQ" target="_blank"><img class="icon" src="https://zaynedrift.replit.app/images/icons/youtube.png" alt="Youtube"></a>
+      <a href="https://soundcloud.com/zaynedrift" target="_blank"><img class="icon" src="https://zaynedrift.replit.app/images/icons/soundcloud.png" alt="Soundcloud"></a>
+    </div><br>
+    <div id="paragraph">
+      <br>
+      <p
+        style="border-style: inset; border-radius: 12px; text-align: center; width: 90%; margin: auto; border-color: #2e0066; background: #2e0066; align-items: center; display: flex; flex-direction: column;">
+        <br>I am a music artist and producer<br>Please enjoy my music!<br><br><br>
+        Releases:<br><br>
+        <toc class="border" id="DITS">DEITY IN THE SKY</toc><br>
+        <toc class="border" id="FTG">FUCK THE GODS</toc><br>
+        <toc class="border" id="NITRO">NITRO</toc><br>
+        <toc class="border" id="CELN">CAMINAR EN LA NOCHE</toc><br>
+        <toc class="border" id="DITSD">DEITY OF THE SKY (Deluxe)</toc><br>
+        <toc class="border" id="GATITA">GATITA</toc><br><br>
+      </p>
+
+    </div><br><br>
+    <div class="image" href="/music/album/gatita/"><img src="https://zaynedrift.replit.app/music/album/gatita/gatita.png" alt="GATITA Album Cover" style="border: 12px ridge #000000; text-align: center; width: 70%; margin: auto; background: #121212; display: flex;"/></div><br><br><br><br>
+  </main>
+</body>
+</html>
+
+<script>
+  document.getElementById("DITS").addEventListener("click", function () {
+    window.location.href = "/music/album/deity-in-the-sky/";
+  });
+  document.getElementById("FTG").addEventListener("click", function () {
+    window.location.href = "/music/single/fuck-the-gods/";
+  });
+  document.getElementById("NITRO").addEventListener("click", function () {
+    window.location.href = "/music/single/nitro/";
+  });
+  document.getElementById("CELN").addEventListener("click", function () {
+    window.location.href = "/music/single/caminar-en-la-noche/";
+  });
+  document.getElementById("DITSD").addEventListener("click", function () {
+    window.location.href = "/music/album/deity-of-the-sky-deluxe/";
+  });
+  document.getElementById("GATITA").addEventListener("click", function () {
+    window.location.href = "/music/album/gatita/";
+  });
+
+</script>
