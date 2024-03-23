@@ -1,8 +1,6 @@
-# [My Website](https://zaynedrift.com) Source Code
+Zaynedrift.com Source Code
 
-This Respository is for my website https://zaynedrift.com
+This repo contains the source code to [zaynedrift.com](https://zaynedrift.com)
 
-It includes all of my source code to my main website
-
-you may borrow code with permission
+You may borrow code with permission
 
