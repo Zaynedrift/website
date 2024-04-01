@@ -10,17 +10,17 @@
   <meta property="og:description" content="Zaynedrift's Official Website!">
   <meta property="og:image" content="https://zaynedrift.com/assets/web/preview.jpg">
   <meta property="og:url" content="https://zaynedrift.com/">
-  <!-- Importing style.css & script.js --> 
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="script.js"></script>
+  <!-- Google Fonts Importing -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <!-- Website Title --> 
   <title>Zaynedrift</title>
 </head>
-
 <body>
   <main>
     <!-- Header 1 Element --> 
-    <h1>Zaynedrift</h1>
+    <h1 class="permanent-marker-regular">Zaynedrift</h1>
     <!-- Buttons --> 
     <div class="buttons">
       <button onclick="window.location.href='/'">Home</button>
@@ -32,128 +32,140 @@
       <button onclick="window.location.href='/pages/'">Pages</button>
     </div>
     <!-- Text --> 
-    <div id="paragraph"><br>
-      <p class="border"><br>Hello! I'm Zayne<br>
-      Welcome to my Website! :3<br><br>I'm a programmer and music producer<br><br>Please read my <a href="https://dni.zaynedrift.com">DNI List</a> before anything else<br><br></p><br>
+    <div id="paragraph">
+      <br><p class="border">
+      <br>Hello! My name is Zayne<br>
+      <br>Welcome to my official website!<br>
+      <br>Please read my <a href="https://dni.zaynedrift.com">DNI List</a> before proceeding <3<br>
+      <br></p><br>
     </div>
     <!-- Image --> 
-    <div class="image" style="border: 12px ridge #000000; text-align: center; width: 90%; margin: auto; background: #121212; display: flex;"><img src="assets/home/catgirl.png" alt="Zayne"/>
-    </div>
-    
+    <div class="image" style="border: 12px ridge #000000; text-align: center; width: 90%; margin: auto; background: #121212; display: flex;">
+      <img src="assets/home/catgirl.png" alt="Zayne"/>
+    </div>  
   </main>
 </body>
 </html>
 
 
+<!-- CSS Styling -->
 <style>
-  html,
-  body {
-    height: 100%;
-    margin: 0;
-    background-color: #2e0066;
-  }
-
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  main {
-    flex: 1;
-    max-width: 1200px;
-    margin: auto;
-    padding: 10px;
-  }
-
-  p {
-    text-align: center;
-    color: #ffffff;
-
-  }
-
-  h1 {
-    color: #fff;
-    text-align: center;
-    margin-top: -10px;
-    margin-bottom: 30px;
-    font-size: 5vw;
-    font-family: Arial, Helvetica, sans-serif;
-
-  }
-
-  button {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    color: #000;
-    background-color: #c9daff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  button:hover {
-    background-color: #e5eeff;
-    box-shadow: 0 0 10px #e5eeff;
-  }
-
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    margin-top: -13px;
-    margin-right: 5px;
-
-  }
-
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 30px;
-    }
-
-    .buttons button {
-      flex: auto;
-      margin-bottom: 10px;
-    }
-  }
-
-  .paragraph {
-    background-color: #2d2d2d;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px;
-    text-align: center;
-    font-size: calc(16px + 0.2vw);
-  }
-
-  .image img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  a {
-    text-decoration: none;
-    color: #42ffc6;
-  }
-
-  p.border {
-  border-style: outset;
-  border-radius: 12px;
+html {
+  height: 100%;
+  margin: 0;
+  background: #ffffff url(https://wallpapers.com/images/hd/transgender-2cetahodmiwvm39w.jpg) center center/cover no-repeat padding-box;
+} /* HTML */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} /* Body Element */
+main {
+  flex: 1;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+} /* Main Elements in Body */
+p {
+  text-align: center;
+  color: #ffffff;
+} /* Normal Text */
+.paragraph {
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  text-align: center;
+  font-size: calc(16px + 0.2vw);
+} /* DIV Class for Normal Text */
+p.border {
+  border: 6px ridge #000000;
   text-align: center;
   width: 75%;
   margin: auto;
-  border-color: #2e0066;
-  background: #2e0066;
+  border-color: #000000;
+  background: #121212;
   font-family: Arial, Helvetica, sans-serif;
-  }
+} /* Normal Text with Borders */
+a {
+  text-decoration: none;
+  color: #ffc6f7;
+  transition: background-color 0.4s ease;
+} /* Element for Links in paragraphs */
+a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 3px #ffffff;
+}
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #000;
+  background-color: #c9daff;
+  cursor: pointer;
+  transition: background-color 0.4s, box-shadow 0.4s ease;
+  font-family: Arial, Helvetica, sans-serif;
+} /* Main Buttons */
+button:hover {
+  background-color: #e5eeff;
+  box-shadow: 0 0 10px #e5eeff;
+} /* Main Buttons Hover Animation */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: -13px;
+  margin-right: 5px;
+} /* DIV Class for Main Buttons */
+.image img {
+  max-width: 100%;
+  height: auto;
+} /* Images */
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-size: 5vw;
+  transition: color 1.4s, text-shadow 1.4s ease;
+} /* Main Header */
+h1:hover {
+  animation: h1shake 1s linear 1s 1 normal none;
+  color: #ffffff;
+  text-shadow: 0 0 14px #ffffff;
+} /* Main Header Shake Animation */
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+} /* Google font for h1 */
+@keyframes h1shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
 
+    10%,
+    30%,
+    50%,
+    70% {
+      transform: translateX(-10px);
+    }
 
+    20%,
+    40%,
+    60% {
+      transform: translateX(10px);
+    }
 
+    80% {
+      transform: translateX(8px);
+    }
 
-
-
-  
+    90% {
+      transform: translateX(-8px);
+    }
+  } /* shake animation for header */
 </style>

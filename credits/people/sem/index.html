@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Meta character set, http-equiv & viewport --> 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Meta Properties -->
+  <!-- Meta Properties --> 
   <meta property="og:title" content="Sem">
   <meta property="og:description" content="Sem is a gay furry femboy ">
   <meta property="og:image" content="https://zaynedrift.com/assets/people/semwithbadges.png">
   <meta property="og:url" content="https://zaynedrift.com/credits/people/sem/">
-  <!-- Title -->
+  <!-- Google Fonts Importing -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <!-- Website Title --> 
   <title>Sem is a gay furry femboy</title>
-  <!-- Import CSS -->
-  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <main>
     <!-- Header -->
-    <h1>Sem_De_Pem</h1>
+    <h1 class="permanent-marker-regular">Sem_De_Pem</h1>
     <!-- Buttons -->
     <div class="buttons">
       <button onclick="window.location.href='/'">Home</button>
@@ -46,3 +49,172 @@
   </main>
 </body>
 </html>
+
+<!-- CSS Styling -->
+<style>
+html {
+  height: 240%;
+  margin: 0;
+  background: #ffffff url(https://wallpapers.com/images/hd/transgender-2cetahodmiwvm39w.jpg) center center/cover no-repeat padding-box;
+} /* HTML */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} /* Body Element */
+main {
+  flex: 1;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+} /* Main Elements in Body */
+p {
+  text-align: center;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+} /* Normal Text */
+.paragraph {
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  text-align: center;
+  font-size: calc(16px + 0.2vw);
+} /* DIV Class for Normal Text */
+p.border {
+  border: 6px ridge #000000;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  border-color: #000000;
+  background: #121212;
+  font-family: Arial, Helvetica, sans-serif;
+} /* Normal Text with Borders */
+a {
+  text-decoration: none;
+  color: #ffc6f7;
+  transition: background-color 0.4s ease;
+} /* Element for Links in paragraphs */
+a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 3px #ffffff;
+}
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #000;
+  background-color: #c9daff;
+  cursor: pointer;
+  transition: background-color 0.4s, box-shadow 0.4s ease;
+  font-family: Arial, Helvetica, sans-serif;
+} /* Main Buttons */
+button:hover {
+  background-color: #e5eeff;
+  box-shadow: 0 0 10px #e5eeff;
+} /* Main Buttons Hover Animation */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: -13px;
+  margin-right: 5px;
+} /* DIV Class for Main Buttons */
+.image img {
+  max-width: 100%;
+  height: auto;
+} /* Images */
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-size: 5vw;
+  transition: color 1.4s, text-shadow 1.4s ease;
+} /* Main Header */
+h1:hover {
+  animation: h1shake 1s linear 1s 1 normal none;
+  color: #ffffff;
+  text-shadow: 0 0 14px #ffffff;
+} /* Main Header Shake Animation */
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+} /* Google font for h1 */
+@keyframes h1shake {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+      transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60% {
+      transform: translateX(10px);
+    }
+
+    80% {
+      transform: translateX(8px);
+    }
+
+    90% {
+      transform: translateX(-8px);
+    }
+  } /* shake animation for header */
+h3 {
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+  transition: color 1.4s, text-shadow 1.4s ease;
+} /* Secondary Headers */
+h3:hover {
+  color: #ffffff;
+  text-shadow: 0 0 14px #ffffff;
+} /* Hover animation for secondary headers */
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} /* Icon Container */
+img.icon {
+  max-width: 60px;
+  height: auto;
+  margin: 5px;
+  transition: transform 0.3s ease;
+} /* Icons Class */
+img.icon:hover {
+  transform: scale(1.1);
+} /* Hover animation for icons */
+bigbutton {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 35px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  width: 90%;
+  border-color: #121212;
+  background-color: #141414;
+  transition: background-color 1.2s ease, box-shadow 1.2s ease;
+  justify-content: center;
+  display: flex;
+}
+bigbutton:hover {
+  background-color: #ffffff;
+  color: #121212; 
+  box-shadow: 0 0 10px #ffffff;
+}
+</style>
