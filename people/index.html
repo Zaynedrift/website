@@ -15,13 +15,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <!-- Title -->
-  <title>Zaynedrift | Credits</title>
+  <title>Zaynedrift | People</title>
 </head>
 
 <body>
   <main>
     <!-- Header -->
-    <h1>Credits</h1>
+    <h1 class="permanent-marker-regular">People</h1>
     <!-- Buttons -->
     <div class="buttons">
       <button onclick="window.location.href='/'">Home</button>
@@ -34,29 +34,48 @@
     </div>
     <!-- Paragraph -->
     <div id="paragraph">
-      <p>Here is where you will find all the amazing people<br>who helped make this website possible!<br>(and people who I liked enough to add)<br></p>
-      <!-- Development Header -->
-      <h3>Development:</h3>
-      <!-- Development Credits -->  
-      <p class="border"><br>
-        HTML: 
-        <a href='/'>Zaynedrift</a> & 
-        <a href='/credits/people/dontmindme/'>Dontmindme</a><br><br>
-        CSS: 
-        <a href='/'>Zaynedrift</a><br><br>
+      <p>
+        Here is where you will find all the cool people
+        <br>who I decided to make pages for
+        <br>everyone here is very awesome sauce!
+        <br>
       </p>
-      <!-- Special People Header -->
-      <h3>Special People:</h3>
-      <!-- Special people Credits -->
-      <p class="border"><br>
-        <a href="/credits/people/vumacc/">Vumacc</a><br>
-        <a href="/credits/people/sem/">Sem_De_Pem</a><br>
-        <a href='/credits/people/aereachnis/'>Aereachnis</a>
-        <br><br></p>
+      <!-- People -->
+      <p class="border" style="width: 80%; align-items: center; display: flex; flex-direction: column;">
+        <br>
+        <bigbutton id="nox">Aereachnis</bigbutton>
+        <br>
+        <bigbutton id="dontmindme">Dontmindme</bigbutton>
+        <br>
+        <bigbutton id="sem">Sem_De_Pem</bigbutton>
+        <br>
+        <bigbutton id="vumacc">Vumacc</bigbutton>
+        <br>
+        <bigbutton id="xerion">Xerion</bigbutton>
+        <br>
+      </p>
     </div>
   </main>
 </body>
 </html>
+
+<script>
+document.getElementById("nox").addEventListener("click", function() {
+  window.location.href = "/people/aereachnis";
+});
+document.getElementById("dontmindme").addEventListener("click", function() {
+  window.location.href = "/people/dontmindme";
+});
+document.getElementById("sem").addEventListener("click", function() {
+  window.location.href = "/people/sem/";
+});
+document.getElementById("vumacc").addEventListener("click", function() {
+  window.location.href = "/people/vumacc/";
+});
+document.getElementById("xerion").addEventListener("click", function() {
+  window.location.href = "/people/xerion/";
+});
+</script>
 
 <!-- CSS Styling -->
 <style>
