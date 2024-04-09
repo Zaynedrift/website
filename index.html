@@ -22,7 +22,9 @@
 <body>
   <main>
     <!-- Header 1 Element --> 
-    <h1 class="permanent-marker-regular">Zaynedrift</h1>
+    <div class="permanent-marker-regular">
+      <h1>Zaynedrift</h1>
+    </div>
     <!-- Buttons --> 
     <div class="buttons">
       <button onclick="window.location.href='/'">Home</button>
@@ -45,7 +47,7 @@
       <br>
     </div>
     <!-- Image --> 
-    <div class="image" style="border: 12px ridge #000000; text-align: center; width: 70%; margin: auto; background: #121212; display: flex;">
+    <div class="image">
       <img src="https://zaynedrift.com/assets/home/catgirl.png" alt="Zayne"/>
     </div>  
   </main>
@@ -128,8 +130,13 @@ button:hover {
   margin-right: 5px;
 } /* DIV Class for Main Buttons */
 .image img {
-  max-width: 100%;
   height: auto;
+  border: 12px ridge #000000; 
+  text-align: center; 
+  width: 70%; 
+  margin: auto; 
+  background: #121212; 
+  display: flex;
 } /* Images */
 h1 {
   color: #ffffff;
