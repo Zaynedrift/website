@@ -46,11 +46,11 @@
         </p>
       </div>
     </div><br>
-      <p style="border: 12px ridge #000000; text-align: center; width: 80%; margin: auto; background: #121212; align-items: center; display: flex; flex-direction: column;">
-        <br><bigbutton id="gallery">Gallery</bigbutton><br>
-        <br><bigbutton id="nox">Nox's Website</bigbutton><br>
-        <br><bigbutton id="guh">Guh</bigbutton><br><br>
-      </p>
+    <!-- Big Buttons -->
+    <div class="buttonborder">
+      <br><bigbutton id="gallery">Gallery</bigbutton><br>
+      <br><bigbutton id="nox">Nox's Website</bigbutton><br>
+      <br><bigbutton id="guh">Guh</bigbutton><br>
     </div>
   </main>
 </body>
@@ -91,6 +91,7 @@ p {
   text-align: center;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
+  cursor: default;
 } /* Normal Text */
 .paragraph {
   background-color: #2d2d2d;
@@ -152,6 +153,7 @@ h1 {
   margin-bottom: 30px;
   font-size: 5vw;
   transition: color 1.4s, text-shadow 1.4s ease;
+  cursor: default;
 } /* Main Header */
 h1:hover {
   animation: h1shake 1s linear 1s 1 normal none;
@@ -227,7 +229,7 @@ bigbutton {
   width: 90%;
   border-color: #121212;
   background-color: #141414;
-  transition: background-color 1.2s ease, box-shadow 1.2s ease;
+  transition: background-color 0.9s ease, box-shadow 0.9s ease;
   justify-content: center;
   display: flex;
 }
