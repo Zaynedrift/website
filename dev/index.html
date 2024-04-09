@@ -18,10 +18,11 @@
   <!-- Website Title --> 
   <title>Projects</title>
 </head>
-
 <body>
   <main>
-    <h1 class="permanent-marker-regular">Projects</h1>
+    <h1 class="permanent-marker-regular">
+      Projects
+    </h1>
     <div class="buttons">
       <button onclick="window.location.href='/'">Home</button>
       <button onclick="window.location.href='/about/'">About Me</button>
@@ -31,47 +32,58 @@
       <button onclick="window.location.href='/discord/'">Discord</button>
       <button onclick="window.location.href='/pages/'">Pages</button>
     </div>
-<br>
     <div id="paragraph">
-      <p class="border">
-        <br>I am a Frontend Web Developer
-        <br>and a Discord App/Bot Developer.
+      <div>
         <br>
-        <br>This is where all my coding projects are!
-        <br>(Some Projects are not provided)
-        <br><br>
-      </p>
+        <p class="border">        <br>I am a Frontend Web Developer
+          <br>and a Discord App/Bot Developer!
+          <br>
+          <br>This is where all my coding projects are!
+          <br>(Some Projects are not provided)
+          <br><br>
+        </p>
+      </div>
       <br>
-      <p style="border: 12px ridge #000000; text-align: center; width: 80%; margin: auto; background: #121212; align-items: center; display: flex; flex-direction: column;">
-        <br><bigbutton id="bot">Discord Bots</bigbutton><br>
-        <br><bigbutton id="web">Websites</bigbutton><br>
-        <br><bigbutton id="feat">Featured</bigbutton><br><br>
-        <br><bigbutton id="othr">Other Projects</bigbutton><br><br>
-      </p>
+      <div>
+        <p style="border: 12px ridge #000000; text-align: center; width: 80%; margin: auto; background: #121212; align-items: center; display: flex; flex-direction: column;">
+          <br>
+          <bigbutton id="bot">
+            Discord Bots
+          </bigbutton>
+          <br><br>
+          <bigbutton id="web">
+            Websites
+          </bigbutton>
+          <br><br>
+          <bigbutton id="feat">
+            Featured
+          </bigbutton>
+          <br><br>
+          <bigbutton id="othr">
+            Other Projects
+          </bigbutton>
+          <br>
+        </p>
+      </div>
     </div>
   </main>
 </body>
-
 </html>
 
 <script>
 document.getElementById("bot").addEventListener("click", function() {
   window.location.href = "/dev/bots/";
 });
-
 document.getElementById("web").addEventListener("click", function() {
   window.location.href = "/dev/websites/";
 });
-
 document.getElementById("feat").addEventListener("click", function() {
   window.location.href = "/dev/featured/";
 });
-
 document.getElementById("othr").addEventListener("click", function() {
   window.location.href = "/dev/others/";
 });
 </script>
-
 <!-- CSS Styling -->
 <style>
 html {
