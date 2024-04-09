@@ -7,39 +7,92 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Meta Properties --> 
-  <meta property="og:title" content="Zaynedrift | Featured Projects">
-  <meta property="og:description" content="a list of projects that Zaynedrift has been featured/credited in">
+  <meta property="og:title" content="Projects">
+  <meta property="og:description" content="Zaynedrift's Projects Page">
   <meta property="og:image" content="https://zaynedrift.com/assets/web/preview.jpg">
-  <meta property="og:url" content="https://zaynedrift.com/dev/featured/">
+  <meta property="og:url" content="https://zaynedrift.com/projects/"
   <!-- Google Fonts Importing -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <!-- Website Title --> 
-  <title>Zaynedrift | Featured Projects</title>
+  <title>Projects</title>
 </head>
 <body>
   <main>
-    <h1 class="permanent-marker-regular">Featured Projects</h1>
+    <!-- Main Header -->
+    <h1 class="permanent-marker-regular">
+      Projects
+    </h1>
+    <!-- Menu Buttons -->
     <div class="buttons">
       <button onclick="window.location.href='/'">Home</button>
       <button onclick="window.location.href='/about/'">About Me</button>
-      <button onclick="window.location.href='/dev/'">Developer</button>
+      <button onclick="window.location.href='/projects/'">Projects</button>
       <button onclick="window.location.href='/music/'">Music</button>
       <button onclick="window.location.href='/social/'">Socials</button>
       <button onclick="window.location.href='/discord/'">Discord</button>
       <button onclick="window.location.href='/pages/'">Pages</button>
     </div>
+    <!-- Page Content -->
     <div id="paragraph">
-      <p>This is a list of all projects I have been Featured/Credited in<br><br></p>
+      <!-- Text -->
+      <div>
+        <br>
+        <p class="border">        <br>I am a Frontend Web Developer
+          <br>and a Discord App/Bot Developer!
+          <br>
+          <br>This is where all my coding projects are!
+          <br>(Some Projects are not provided)
+          <br><br>
+        </p>
+      </div>
+      <br>
+      <!-- Big Buttons -->
+      <div>
+        <p style="border: 12px ridge #000000; text-align: center; width: 80%; margin: auto; background: #121212; align-items: center; display: flex; flex-direction: column;">
+          <br>
+          <bigbutton id="bot">
+            Discord Bots
+          </bigbutton>
+          <br><br>
+          <bigbutton id="web">
+            Websites
+          </bigbutton>
+          <br><br>
+          <bigbutton id="feat">
+            Featured
+          </bigbutton>
+          <br><br>
+          <bigbutton id="othr">
+            Other Projects
+          </bigbutton>
+          <br>
+        </p>
+      </div>
     </div>
   </main>
 </body>
 </html>
+<!-- Script -->
+<script>
+document.getElementById("bot").addEventListener("click", function() {
+  window.location.href = "/projects/bots/";
+});
+document.getElementById("web").addEventListener("click", function() {
+  window.location.href = "/projects/websites/";
+});
+document.getElementById("feat").addEventListener("click", function() {
+  window.location.href = "/projects/featured/";
+});
+document.getElementById("othr").addEventListener("click", function() {
+  window.location.href = "/projects/others/";
+});
+</script>
 <!-- CSS Styling -->
 <style>
 html {
-  height: 100%;
+  height: 130%;
   margin: 0;
   background: #ffffff url(https://wallpapers.com/images/hd/transgender-2cetahodmiwvm39w.jpg) center center/cover no-repeat padding-box;
   background-size: cover;
