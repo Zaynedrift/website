@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <!-- Meta character set, http-equiv & viewport --> 
   <meta charset="UTF-8">
@@ -20,10 +19,10 @@
 </head>
 <body>
   <main>
-    <!-- Main Header -->
-    <h1 class="permanent-marker-regular">
-      Projects
-    </h1>
+    <!-- Header -->
+    <div class="permanent-marker-regular">
+      <h1>Projects</h1>
+    </div>
     <!-- Menu Buttons -->
     <div class="buttons">
       <button onclick="window.location.href='/'">Home</button>
@@ -33,43 +32,36 @@
       <button onclick="window.location.href='/social/'">Socials</button>
       <button onclick="window.location.href='/discord/'">Discord</button>
       <button onclick="window.location.href='/pages/'">Pages</button>
-    </div>
-    <!-- Page Content -->
-    <div id="paragraph">
+    </div><br>
+    <!-- Text & Icons -->
+    <div class="border">
       <!-- Text -->
-      <div>
-        <br>
-        <p class="border">        <br>I am a Frontend Web Developer
-          <br>and a Discord App/Bot Developer!
-          <br>
-          <br>This is where all my coding projects are!
-          <br>(Some Projects are not provided)
-          <br><br>
+      <div id="paragraph">
+        <p>
+          I am a Frontend Web Developer<br>
+          and a Discord App/Bot Developer!<br><br>
+          This is where I keep my coding projects<br>
+          (Some Projects are not provided)
         </p>
       </div>
-      <br>
-      <!-- Big Buttons -->
-      <div>
-        <p style="border: 12px ridge #000000; text-align: center; width: 80%; margin: auto; background: #121212; align-items: center; display: flex; flex-direction: column;">
-          <br>
-          <bigbutton id="bot">
-            Discord Bots
-          </bigbutton>
-          <br><br>
-          <bigbutton id="web">
-            Websites
-          </bigbutton>
-          <br><br>
-          <bigbutton id="feat">
-            Featured
-          </bigbutton>
-          <br><br>
-          <bigbutton id="othr">
-            Other Projects
-          </bigbutton>
-          <br>
-        </p>
+      <!-- Icons -->
+      <div class="icon-container">
+        <!-- Github Icon -->
+        <div>
+          <img class="icon" src="https://zaynedrift.com/assets/icons/github2.png" alt="Github" href="https://github.com/Zaynedrift" target="_blank" style="cursor: pointer;">
+        </div>
+        <!-- Replit Icon -->
+        <div>
+          <img class="icon" src="https://zaynedrift.com/assets/icons/replit.png" alt="Replit" href="https://replit.com/@Zaynedrift" target="_blank" style="cursor: pointer;">
+        </div>
       </div>
+    </div><br>
+    <!-- Big Buttons -->
+    <div class="buttonborder">
+      <br><bigbutton id="bot">Discord Bots</bigbutton><br>
+      <br><bigbutton id="web">Websites</bigbutton><br>
+      <br><bigbutton id="feat">Featured</bigbutton><br>
+      <br><bigbutton id="othr">Other Projects</bigbutton><br>
     </div>
   </main>
 </body>
@@ -92,29 +84,30 @@ document.getElementById("othr").addEventListener("click", function() {
 <!-- CSS Styling -->
 <style>
 html {
-  height: 130%;
+  height: auto;
   margin: 0;
-  background: #ffffff url(https://wallpapers.com/images/hd/transgender-2cetahodmiwvm39w.jpg) center center/cover no-repeat padding-box;
+  background: #000000 url(https://zaynedrift.com/assets/web/background.jpg) center center/cover no-repeat padding-box;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-} /* HTML */
+}
 body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-} /* Body Element */
+}
 main {
   flex: 1;
   max-width: 1200px;
   margin: auto;
   padding: 10px;
-} /* Main Elements in Body */
+}
 p {
   text-align: center;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
-} /* Normal Text */
+  cursor: default;
+}
 .paragraph {
   background-color: #2d2d2d;
   color: #fff;
@@ -123,8 +116,8 @@ p {
   margin: 10px;
   text-align: center;
   font-size: calc(16px + 0.2vw);
-} /* DIV Class for Normal Text */
-p.border {
+}
+.border {
   border: 6px ridge #000000;
   text-align: center;
   width: 75%;
@@ -132,15 +125,6 @@ p.border {
   border-color: #000000;
   background: #121212;
   font-family: Arial, Helvetica, sans-serif;
-} /* Normal Text with Borders */
-a {
-  text-decoration: none;
-  color: #ffc6f7;
-  transition: background-color 0.4s ease;
-} /* Element for Links in paragraphs */
-a:hover {
-  color: #ffffff;
-  text-shadow: 0 0 3px #ffffff;
 }
 button {
   padding: 10px;
@@ -151,11 +135,11 @@ button {
   cursor: pointer;
   transition: background-color 0.4s, box-shadow 0.4s ease;
   font-family: Arial, Helvetica, sans-serif;
-} /* Main Buttons */
+}
 button:hover {
   background-color: #e5eeff;
   box-shadow: 0 0 10px #e5eeff;
-} /* Main Buttons Hover Animation */
+}
 .buttons {
   display: flex;
   flex-wrap: wrap;
@@ -163,11 +147,7 @@ button:hover {
   justify-content: center;
   margin-top: -13px;
   margin-right: 5px;
-} /* DIV Class for Main Buttons */
-.image img {
-  max-width: 100%;
-  height: auto;
-} /* Images */
+}
 h1 {
   color: #ffffff;
   text-align: center;
@@ -175,17 +155,18 @@ h1 {
   margin-bottom: 30px;
   font-size: 5vw;
   transition: color 1.4s, text-shadow 1.4s ease;
-} /* Main Header */
+  cursor: default;
+}
 h1:hover {
   animation: h1shake 1s linear 1s 1 normal none;
   color: #ffffff;
   text-shadow: 0 0 14px #ffffff;
-} /* Main Header Shake Animation */
+}
 .permanent-marker-regular {
   font-family: "Permanent Marker", cursive;
   font-weight: 400;
   font-style: normal;
-} /* Google font for h1 */
+}
 @keyframes h1shake {
     0%,
     100% {
@@ -212,32 +193,21 @@ h1:hover {
     90% {
       transform: translateX(-8px);
     }
-  } /* shake animation for header */
-h3 {
-  text-decoration: none;
-  font-size: 30px;
-  text-align: center;
-  color: #ffffff;
-  transition: color 1.4s, text-shadow 1.4s ease;
-} /* Secondary Headers */
-h3:hover {
-  color: #ffffff;
-  text-shadow: 0 0 14px #ffffff;
-} /* Hover animation for secondary headers */
+  }
 .icon-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-} /* Icon Container */
+}
 img.icon {
   max-width: 60px;
   height: auto;
   margin: 5px;
   transition: transform 0.3s ease;
-} /* Icons Class */
+}
 img.icon:hover {
   transform: scale(1.1);
-} /* Hover animation for icons */
+}
 bigbutton {
   text-decoration: none;
   color: #ffffff;
@@ -250,7 +220,7 @@ bigbutton {
   width: 90%;
   border-color: #121212;
   background-color: #141414;
-  transition: background-color 1.2s ease, box-shadow 1.2s ease;
+  transition: background-color 0.9s ease, box-shadow 0.9s ease;
   justify-content: center;
   display: flex;
 }
@@ -258,5 +228,16 @@ bigbutton:hover {
   background-color: #ffffff;
   color: #121212; 
   box-shadow: 0 0 10px #ffffff;
+}
+.buttonborder {
+  border: 12px ridge #000000;
+  text-align: center; 
+  width: 80%;
+  margin: auto; 
+  background: #121212;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
 }
 </style>
