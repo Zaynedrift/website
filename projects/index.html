@@ -14,6 +14,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://zaynedrift.com/assets/home/catgirl.png">
   <!-- Website Title --> 
   <title>Projects</title>
 </head>
@@ -48,11 +50,11 @@
       <div class="icon-container">
         <!-- Github Icon -->
         <div>
-          <img class="icon" src="https://zaynedrift.com/assets/icons/github2.png" alt="Github" href="https://github.com/Zaynedrift" target="_blank" style="cursor: pointer;">
+          <img id="github" class="icon" src="https://zaynedrift.com/assets/icons/github2.png" alt="Github" style="cursor: pointer;">
         </div>
         <!-- Replit Icon -->
         <div>
-          <img class="icon" src="https://zaynedrift.com/assets/icons/replit.png" alt="Replit" href="https://replit.com/@Zaynedrift" target="_blank" style="cursor: pointer;">
+          <img id="replit" class="icon" src="https://zaynedrift.com/assets/icons/replit.png" alt="Replit" style="cursor: pointer;">
         </div>
       </div>
     </div><br>
@@ -68,18 +70,26 @@
 </html>
 <!-- Script -->
 <script>
-document.getElementById("bot").addEventListener("click", function() {
-  window.location.href = "/projects/bots/";
-});
-document.getElementById("web").addEventListener("click", function() {
-  window.location.href = "/projects/websites/";
-});
-document.getElementById("feat").addEventListener("click", function() {
-  window.location.href = "/projects/featured/";
-});
-document.getElementById("othr").addEventListener("click", function() {
-  window.location.href = "/projects/others/";
-});
+  // Big Button Scripts
+  document.getElementById("bot").addEventListener("click", function() {
+    window.location.href = "/projects/bots/";
+  });
+  document.getElementById("web").addEventListener("click", function() {
+    window.location.href = "/projects/websites/";
+  });
+  document.getElementById("feat").addEventListener("click", function() {
+    window.location.href = "/projects/featured/";
+  });
+  document.getElementById("othr").addEventListener("click", function() {
+    window.location.href = "/projects/others/";
+  });
+  // Icon Scripts
+  document.getElementById("github").addEventListener("click", function() {
+    window.open("https://github.com/Zaynedrift", "_blank");
+  });
+  document.getElementById("github").addEventListener("click", function() {
+    window.open("https://replit.com/@Zaynedrift", "_blank");
+  });
 </script>
 <!-- CSS Styling -->
 <style>
