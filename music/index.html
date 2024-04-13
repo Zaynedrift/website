@@ -34,20 +34,22 @@
       <button onclick="window.location.href='/pages/'">Pages</button>
     </div>
     <br><br>
-    <div class="icon-container">
-      <a href="https://open.spotify.com/artist/5tN4WMZWV3DjbXhHPGchQF" target="_blank"><img class="icon" src="https://zaynedrift.com/assets/icons/spotify.png" alt="Spotify"></a>
-      <a href="https://music.apple.com/us/artist/zaynedrift/1666506879" target="_blank"><img class="icon" src="https://zaynedrift.com/assets/icons/applemusic.png" alt="Apple Music"></a>
-      <a href="https://www.youtube.com/channel/UCkXoZUiKofz75MXrQOfB1SQ" target="_blank"><img class="icon" src="https://zaynedrift.com/assets/icons/youtube.png" alt="Youtube"></a>
-      <a href="https://soundcloud.com/zaynedrift" target="_blank"><img class="icon" src="https://zaynedrift.com/assets/icons/soundcloud.png" alt="Soundcloud"></a>
+    <div class="musicbox">
+      <div class="icon-container">
+        <a href="https://open.spotify.com/artist/5tN4WMZWV3DjbXhHPGchQF" target="_blank"><img class="icon" src="https://zaynedrift.com/assets/icons/spotify.png" alt="Spotify"></a>
+        <a href="https://music.apple.com/us/artist/zaynedrift/1666506879" target="_blank"><img class="icon" src="https://zaynedrift.com/assets/icons/applemusic.png" alt="Apple Music"></a>
+        <a href="https://www.youtube.com/channel/UCkXoZUiKofz75MXrQOfB1SQ" target="_blank"><img class="icon" src="https://zaynedrift.com/assets/icons/youtube.png" alt="Youtube"></a>
+        <a href="https://soundcloud.com/zaynedrift" target="_blank"><img class="icon" src="https://zaynedrift.com/assets/icons/soundcloud.png" alt="Soundcloud"></a>
+      </div>
     </div><br>
-    <div class="permanent-marker-regular">
-      <h3>Releases</h3>
-    </div>
     <!-- Release Divs -->
     <div>
-      <div class="musicbox">
-        <
-        <bigbutton class="border" id="GATITA">GATITA</bigbutton><br>
+      <!-- GATITA -->
+      <div class="musicbox"><br>
+        <div class="image">
+          <img src="https://zaynedrift.com/assets/music/gatita.png" alt="Zayne"/>
+        </div><br>
+          <bigbutton class="border" id="GATITA">GATITA</bigbutton><br>
       </div><br>
       <div class="musicbox">    
       </div><br>
@@ -171,8 +173,11 @@ button:hover {
   margin-right: 5px;
 } /* DIV Class for Main Buttons */
 .image img {
-  max-width: 100%;
+  max-width: 384px;
   height: auto;
+  display: flex;
+  flex: auto;
+  justify-content: flex-start;
 } /* Images */
 h1 {
   color: #ffffff;
@@ -220,8 +225,9 @@ h1:hover {
     }
   } /* shake animation for header */
 h3 {
+  margin-top: -10px;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   color: #ffffff;
   transition: color 1.4s, text-shadow 1.4s ease;
