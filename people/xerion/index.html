@@ -35,10 +35,11 @@
       <button onclick="window.location.href='/pages/'">Pages</button>
     </div>
 
-    <div id="paragraph">
+    <div class="border">
       <p>Xerion called me "mom" :P<br></p><br>
-      <div class="image"><img src="https://zaynedrift.com/assets/people/xerion.png" alt="Xerion calling me Mom" style="border: 12px ridge #000000; text-align: center; width: 80%; margin: auto; background: #121212; display: flex;"/></div>
-
+    </div>
+    <div class="image">
+      <img src="https://zaynedrift.com/assets/people/xerion.png" alt="Xerion calling me Mom"/>
     </div>
   </main>
 </body>
@@ -79,7 +80,7 @@ p {
   text-align: center;
   font-size: calc(16px + 0.2vw);
 } /* DIV Class for Normal Text */
-p.border {
+.border {
   border: 6px ridge #000000;
   text-align: center;
   width: 75%;
@@ -122,6 +123,12 @@ button:hover {
 .image img {
   max-width: 100%;
   height: auto;
+  border: 12px ridge #000000;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  background: #121212;
+  display: flex;
 } /* Images */
 h1 {
   color: #ffffff;
