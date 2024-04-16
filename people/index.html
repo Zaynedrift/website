@@ -33,7 +33,7 @@
       <button onclick="window.location.href='/pages/'">Pages</button>
     </div>
     <!-- Paragraph -->
-    <div id="paragraph">
+    <div>
       <p>
         Here is where you will find all the cool people
         <br>who I decided to make pages for
@@ -41,7 +41,7 @@
         <br>
       </p>
       <!-- People -->
-      <p class="border" style="width: 80%; align-items: center; display: flex; flex-direction: column;">
+      <div class="border" style="width: 80%; align-items: center; display: flex; flex-direction: column;">
         <br>
         <bigbutton id="nox">Aereachnis</bigbutton>
         <br>
@@ -57,7 +57,7 @@
         <br><br>
         If you want a page, dm me on discord and I might make you one :3
         <br><br>
-      </p>
+      </div>
     </div>
   </main>
 </body>
@@ -119,15 +119,18 @@ p {
   text-align: center;
   font-size: calc(16px + 0.2vw);
 } /* DIV Class for Normal Text */
-p.border {
+.border {
   border: 6px ridge #000000;
   text-align: center;
-  width: 75%;
+  width: 80%;
   margin: auto;
   border-color: #000000;
   background: #121212;
   font-family: Arial, Helvetica, sans-serif;
-} /* Normal Text with Borders */
+  align-items: center; 
+  display: flex; 
+  flex-direction: column;
+}
 a {
   text-decoration: none;
   color: #ffc6f7;
