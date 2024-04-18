@@ -137,9 +137,15 @@ h1 {
   text-align: center;
   margin-top: -10px;
   margin-bottom: 30px;
-  font-size: 5vw;
+  font-size: min(max(6vw, 60px), 120px);
   transition: color 1.4s, text-shadow 1.4s ease;
   cursor: default;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    margin-bottom: 18px;
+    font-size: 50px;
+  }
 }
 h1:hover {
   animation: h1shake 1s linear 1s 1 normal none;
