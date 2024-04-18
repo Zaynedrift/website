@@ -54,7 +54,10 @@
     <!-- Releases -->
     <div>
       <!-- GATITA -->
-      <div class="musicbox"><br>
+      <div class="musicbox">
+        <div class="permanent-marker-regular">
+          <h3>GATITA</h3>
+        </div>
         <div class="image">
           <img src="https://zaynedrift.com/assets/music/gatita.png" alt="GATITA Release Cover"/>
         </div><br>
@@ -293,4 +296,19 @@ bigbutton:hover {
   display: flex;
   flex-direction: column;
 }
+  h3 {
+    text-decoration: none;
+    font-size: min(max(3vw, 30px), 54px);
+    text-align: center;
+    color: #ffffff;
+    transition: color 1.4s, text-shadow 1.4s ease;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: default;
+  }
+  h3:hover {
+    color: #ffffff;
+    text-shadow: 0 0 14px #ffffff;
+    animation: h1shake 1s linear 1s 1 normal none;
+  }
 </style>
