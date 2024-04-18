@@ -96,75 +96,71 @@
 </html>
 <!-- CSS Styling -->
 <style>
-html {
-  height: 100%;
-  margin: 0;
-  background: #000000 url(https://zaynedrift.com/assets/web/background.jpg) center center/cover no-repeat padding-box;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-} /* HTML */
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} /* Body Element */
-main {
-  flex: 1;
-  max-width: 1200px;
-  margin: auto;
-  padding: 10px;
-} /* Main Elements in Body */
-p {
-  text-align: center;
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-  cursor: default;
-} /* Normal Text */
-.border {
-  border: 6px ridge #000000;
-  text-align: center;
-  width: 75%;
-  margin: auto;
-  border-color: #000000;
-  background: #121212;
-  font-family: Arial, Helvetica, sans-serif;
-} /* Normal Text with Borders */
-a {
-  text-decoration: none;
-  color: #ffc6f7;
-  transition: background-color 0.4s ease;
-} /* Element for Links in paragraphs */
-a:hover {
-  color: #ffffff;
-  text-shadow: 0 0 3px #ffffff;
-}
-button {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  color: #000;
-  background-color: #c9daff;
-  cursor: pointer;
-  transition: background-color 0.4s, box-shadow 0.4s ease;
-  font-family: Arial, Helvetica, sans-serif;
-} /* Main Buttons */
-button:hover {
-  background-color: #e5eeff;
-  box-shadow: 0 0 10px #e5eeff;
-} /* Main Buttons Hover Animation */
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-top: -13px;
-  margin-right: 5px;
-} /* DIV Class for Main Buttons */
-.image img {
-  max-width: 100%;
-  height: auto;
-} /* Images */
+  html {
+    height: 100%;
+    margin: 0;
+    background: #000000 url(https://zaynedrift.com/assets/web/background.jpg) center center/cover no-repeat padding-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main {
+    flex: 1;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+  }
+  p {
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+  }
+  .border {
+    border: 6px ridge #000000;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    border-color: #000000;
+    background: #121212;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: #ffc6f7;
+    transition: background-color 0.4s ease;
+  }
+  a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 3px #ffffff;
+  }
+  button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #000;
+    background-color: #c9daff;
+    cursor: pointer;
+    transition: background-color 0.4s, box-shadow 0.4s ease;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  button:hover {
+    background-color: #e5eeff;
+    box-shadow: 0 0 10px #e5eeff;
+  }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: -13px;
+    margin-right: 5px;
+  }
   h1 {
     color: #ffffff;
     text-align: center;
@@ -180,41 +176,37 @@ button:hover {
       font-size: 50px;
     }
   }
-h1:hover {
-  animation: h1shake 1s linear 1s 1 normal none;
-  color: #ffffff;
-  text-shadow: 0 0 14px #ffffff;
-} /* Main Header Shake Animation */
-.permanent-marker-regular {
-  font-family: "Permanent Marker", cursive;
-  font-weight: 400;
-  font-style: normal;
-} /* Google font for h1 */
-@keyframes h1shake {
-    0%,
-    100% {
-      transform: translateX(0);
+  h1:hover {
+    animation: h1shake 1s linear 1s 1 normal none;
+    color: #ffffff;
+    text-shadow: 0 0 14px #ffffff;
+  }
+  .permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  @keyframes h1shake {
+      0%,
+      100% {
+        transform: translateX(0);
+      }
+      10%,
+      30%,
+      50%,
+      70% {
+        transform: translateX(-10px);
+      }
+      20%,
+      40%,
+      60% {
+        transform: translateX(10px);
+      }
+      80% {
+        transform: translateX(8px);
+      }
+      90% {
+        transform: translateX(-8px);
+      }
     }
-
-    10%,
-    30%,
-    50%,
-    70% {
-      transform: translateX(-10px);
-    }
-
-    20%,
-    40%,
-    60% {
-      transform: translateX(10px);
-    }
-
-    80% {
-      transform: translateX(8px);
-    }
-
-    90% {
-      transform: translateX(-8px);
-    }
-  } /* shake animation for header */
 </style>
