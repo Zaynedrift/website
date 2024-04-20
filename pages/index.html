@@ -35,10 +35,9 @@
       <button onclick="window.location.href='/pages/'">Pages</button>
     </div>
     <!-- Big Buttons -->
-    <div><br>
-      <p style="border: 12px ridge #000000; text-align: center; width: 80%; margin: auto; background: #121212; align-items: center; display: flex; flex-direction: column;">
-        <br><bigbutton id="people">People</bigbutton>
-        <br><bigbutton id="privacy">Privacy Policy</bigbutton><br></p><br><br>
+    <div class="bigbuttonborder"><br>
+      <br><bigbutton id="people">People</bigbutton>
+      <br><bigbutton id="privacy">Privacy Policy</bigbutton><br>
     </div>
   </main>
 </body>
@@ -53,74 +52,74 @@
 </script>
 <!-- CSS Styling -->
 <style>
-html {
-  height: 100%;
-  margin: 0;
-  background: #000000 url(https://zaynedrift.com/assets/web/background.jpg) center center/cover no-repeat padding-box;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-main {
-  flex: 1;
-  max-width: 1200px;
-  margin: auto;
-  padding: 10px;
-}
-p {
-  text-align: center;
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-}
-p.border {
-  border: 6px ridge #000000;
-  text-align: center;
-  width: 75%;
-  margin: auto;
-  border-color: #000000;
-  background: #121212;
-  font-family: Arial, Helvetica, sans-serif;
-}
-a {
-  text-decoration: none;
-  color: #ffc6f7;
-  transition: background-color 0.4s ease;
-}
-a:hover {
-  color: #ffffff;
-  text-shadow: 0 0 3px #ffffff;
-}
-button {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  color: #000;
-  background-color: #c9daff;
-  cursor: pointer;
-  transition: background-color 0.4s, box-shadow 0.4s ease;
-  font-family: Arial, Helvetica, sans-serif;
-}
-button:hover {
-  background-color: #e5eeff;
-  box-shadow: 0 0 10px #e5eeff;
-}
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  margin-top: -13px;
-  margin-right: 5px;
-}
-.image img {
-  max-width: 100%;
-  height: auto;
-}
+  html {
+    height: 100%;
+    margin: 0;
+    background: #000000 url(https://zaynedrift.com/assets/web/background.jpg) center center/cover no-repeat padding-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main {
+    flex: 1;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+  }
+  p {
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  p.border {
+    border: 6px ridge #000000;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    border-color: #000000;
+    background: #121212;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: #ffc6f7;
+    transition: background-color 0.4s ease;
+  }
+  a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 3px #ffffff;
+  }
+  button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #000;
+    background-color: #c9daff;
+    cursor: pointer;
+    transition: background-color 0.4s, box-shadow 0.4s ease;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  button:hover {
+    background-color: #e5eeff;
+    box-shadow: 0 0 10px #e5eeff;
+  }
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: -13px;
+    margin-right: 5px;
+  }
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
   h1 {
     color: #ffffff;
     text-align: center;
@@ -136,97 +135,98 @@ button:hover {
       font-size: 50px;
     }
   }
-h1:hover {
-  animation: h1shake 1s linear 1s 1 normal none;
-  color: #ffffff;
-  text-shadow: 0 0 14px #ffffff;
-}
-.permanent-marker-regular {
-  font-family: "Permanent Marker", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-@keyframes h1shake {
-    0%,
-    100% {
-      transform: translateX(0);
-    }
-
-    10%,
-    30%,
-    50%,
-    70% {
-      transform: translateX(-10px);
-    }
-
-    20%,
-    40%,
-    60% {
-      transform: translateX(10px);
-    }
-
-    80% {
-      transform: translateX(8px);
-    }
-
-    90% {
-      transform: translateX(-8px);
-    }
+  h1:hover {
+    animation: h1shake 1s linear 1s 1 normal none;
+    color: #ffffff;
+    text-shadow: 0 0 14px #ffffff;
   }
-h3 {
-  text-decoration: none;
-  font-size: 30px;
-  text-align: center;
-  color: #ffffff;
-  transition: color 1.4s, text-shadow 1.4s ease;
-}
-h3:hover {
-  color: #ffffff;
-  text-shadow: 0 0 14px #ffffff;
-}
-.icon-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-img.icon {
-  max-width: 60px;
-  height: auto;
-  margin: 5px;
-  transition: transform 0.3s ease;
-}
-img.icon:hover {
-  transform: scale(1.1);
-}
-bigbutton {
-  text-decoration: none;
-  color: #ffffff;
-  padding: 5px;
-  font-size: 35px;
-  cursor: pointer;
-  border-radius: 5px;
-  border: none;
-  text-align: center;
-  width: 90%;
-  border-color: #121212;
-  background-color: #121212;
-  transition: background-color 1.2s ease, box-shadow 1.2s ease;
-  justify-content: center;
-  display: flex;
-}
-bigbutton:hover {
-  background-color: #ffffff;
-  color: #121212; 
-  box-shadow: 0 0 10px #ffffff;
-}
-.bigbuttonborder {
-  border: 12px ridge #000000; 
-  text-align: center;
-  width: 80%;
-  margin: auto; 
-  background: #121212; 
-  align-items: center; 
-  display: flex; 
-  flex-direction: column;
-}
+  .permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  @keyframes h1shake {
+      0%,
+      100% {
+        transform: translateX(0);
+      }
+
+      10%,
+      30%,
+      50%,
+      70% {
+        transform: translateX(-10px);
+      }
+
+      20%,
+      40%,
+      60% {
+        transform: translateX(10px);
+      }
+
+      80% {
+        transform: translateX(8px);
+      }
+
+      90% {
+        transform: translateX(-8px);
+      }
+    }
+  h3 {
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    transition: color 1.4s, text-shadow 1.4s ease;
+  }
+  h3:hover {
+    color: #ffffff;
+    text-shadow: 0 0 14px #ffffff;
+  }
+  .icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  img.icon {
+    max-width: 60px;
+    height: auto;
+    margin: 5px;
+    transition: transform 0.3s ease;
+  }
+  img.icon:hover {
+    transform: scale(1.1);
+  }
+  bigbutton {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px;
+    font-size: 35px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    width: 90%;
+    border-color: #121212;
+    background-color: #121212;
+    transition: background-color 1.2s ease, box-shadow 1.2s ease;
+    justify-content: center;
+    display: flex;
+  }
+  bigbutton:hover {
+    background-color: #ffffff;
+    color: #121212; 
+    box-shadow: 0 0 10px #ffffff;
+  }
+  .bigbuttonborder {
+    border: 12px ridge #000000; 
+    text-align: center;
+    width: 80%;
+    margin: auto; 
+    background: #121212; 
+    align-items: center; 
+    display: flex; 
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 </style>
