@@ -34,9 +34,11 @@
       <button onclick="window.location.href='/pages/'">Pages</button>
     </div><br> 
     <div class="border">
-    <p>This is a list of all of my discord bot projects.</p>
-    <p>you will be directed to the corresponding github repo</p>
-      <br><bigbutton id="ticketbot">Ticket Bot</bigbutton><br><br></p> 
+      <div>
+        <p>This is a list of all of my discord app projects.</p>
+        <p>you will be directed to the corresponding github repo/app invite</p>
+      </div>
+    <bigbutton id="ticketbot">Ticket Bot</bigbutton><br>
     </div>
   </main>
 </body>
@@ -48,10 +50,9 @@ document.getElementById("ticketbot").addEventListener("click", function() {
 });
 </script>
 
-<!-- CSS Styling -->
 <style>
   html {
-    height: 100%;
+    height: auto;
     margin: 0;
     background: #000000 url(https://zaynedrift.com/assets/web/background.jpg) center center/cover no-repeat padding-box;
     background-size: cover;
@@ -74,15 +75,6 @@ document.getElementById("ticketbot").addEventListener("click", function() {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     cursor: default;
-  }
-  a {
-    text-decoration: none;
-    color: #ffc6f7;
-    transition: background-color 0.4s ease;
-  }
-  a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 3px #ffffff;
   }
   button {
     padding: 10px;
@@ -157,10 +149,24 @@ document.getElementById("ticketbot").addEventListener("click", function() {
         transform: translateX(-8px);
       }
     }
+  .icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  img.icon {
+    max-width: 60px;
+    height: auto;
+    margin: 5px;
+    transition: transform 0.3s ease;
+  }
+  img.icon:hover {
+    transform: scale(1.1);
+  }
   bigbutton {
     text-decoration: none;
     color: #ffffff;
-    padding: 4px;
+    padding: 5px;
     font-size: 35px;
     cursor: pointer;
     border-radius: 5px;
@@ -183,11 +189,10 @@ document.getElementById("ticketbot").addEventListener("click", function() {
     text-align: center;
     width: 80%;
     margin: auto;
-    border-color: #000000;
     background: #121212;
-    font-family: Arial, Helvetica, sans-serif;
     align-items: center;
     display: flex;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
   }
 </style>
