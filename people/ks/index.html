@@ -71,12 +71,14 @@
     padding: 10px;
   }
   h1 {
+    width: 50%;
+    margin: auto;
     color: #00CEFF;
     text-align: center;
     margin-top: -10px;
     margin-bottom: 30px;
     font-size: min(max(6vw, 60px), 120px);
-    transition: color 1.4s, text-shadow 1.4s ease;
+    transition: text-shadow 0.8s ease;
     cursor: default;
   }
   @media only screen and (max-width: 600px) {
@@ -86,36 +88,7 @@
     }
   }
   h1:hover {
-    animation: h1shake 1s linear 1s 1 normal none;
-    color: #00CEFF;
     text-shadow: 0 0 14px #00CEFF;
-  }
-  @keyframes h1shake {
-    0%,
-    100% {
-      transform: translateX(0);
-    }
-
-    10%,
-    30%,
-    50%,
-    70% {
-      transform: translateX(-10px);
-    }
-
-    20%,
-    40%,
-    60% {
-      transform: translateX(10px);
-    }
-
-    80% {
-      transform: translateX(8px);
-    }
-
-    90% {
-      transform: translateX(-8px);
-    }
   }
   p {
     text-align: center;
@@ -124,13 +97,18 @@
     cursor: default;
   }
   .border {
-    border: 12px ridge #000000;
+    border: 7px ridge #000000;
     text-align: center;
     width: 70%;
     margin: auto;
     border-color: #000000;
     background: #121212;
     font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.4s, box-shadow 0.4s ease;
+  }
+  .border:hover {
+    box-shadow: 0 0 25px #00CEFF;
+    background-color: #000000;
   }
   .permanent-marker-regular {
     font-family: "Permanent Marker", cursive;
@@ -140,16 +118,17 @@
   button {
     padding: 10px;
     border-radius: 5px;
-    border: none;
-    color: #000;
-    background-color: #00CEFF;
+    border: 1px ridge;
+    border-color: #00CEFF;
+    color: #00CEFF;
+    background-color: #202020;
     cursor: pointer;
     transition: background-color 0.4s, box-shadow 0.4s ease;
     font-family: Arial, Helvetica, sans-serif;
   }
   button:hover {
-    background-color: #75e3ff;
-    box-shadow: 0 0 10px #75e3ff;
+    background-color: #000000;
+    box-shadow: 0 0 10px #00CEFF;
   }
   .buttons {
     display: flex;
@@ -160,11 +139,15 @@
   }
   .image img {
     height: auto;
-    border: 12px ridge #000000; 
+    border: 3px ridge #000000;
     text-align: center; 
     width: 70%; 
     margin: auto; 
-    background: #121212; 
+    background: #000000; 
     display: flex;
+    transition: box-shadow 0.4s ease;
+  }
+  .image img:hover {
+    box-shadow: 0 0 25px #00CEFF;
   }
 </style>
