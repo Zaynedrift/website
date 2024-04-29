@@ -89,6 +89,7 @@ p {
   border-color: #000000;
   background: #121212;
   font-family: Arial, Helvetica, sans-serif;
+  animation: bdr 0.8s ease 0s 1 normal forwards;
 }
 a {
   text-decoration: none;
@@ -109,6 +110,7 @@ button {
   cursor: pointer;
   transition: background-color 0.4s ease, box-shadow 0.4s ease, color 0.4s ease;
   font-family: Arial, Helvetica, sans-serif;
+  animation: bdr 0.8s ease 0s 1 normal forwards;
 }
 button:hover {
   color: #000000;
@@ -137,6 +139,7 @@ h1 {
   font-size: min(max(6vw, 60px), 120px);
   transition: color 1.4s, text-shadow 1.4s ease;
   cursor: default;
+  animation: bdr 0.8s ease 0s 1 normal forwards;
 }
 @media only screen and (max-width: 600px) {
   h1 {
@@ -145,7 +148,6 @@ h1 {
   }
 }
 h1:hover {
-  animation: h1shake 1s linear 1s 1 normal none;
   color: #ffc6f7;
   text-shadow: 0 0 14px #ffc6f7;
 }
@@ -177,5 +179,15 @@ h1:hover {
       transform: translateX(-8px);
     }
   }
+@keyframes bdr {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 </style>
 </html>
