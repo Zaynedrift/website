@@ -35,6 +35,7 @@
     </div><br>
     <!-- Big Buttons -->
     <div class="bigbuttonborder">
+        <br><bigbutton id="music">Music</bigbutton>
         <br><bigbutton id="people">People</bigbutton>
         <br><bigbutton id="privacy">Privacy Policy</bigbutton><br>
     </div>
@@ -42,6 +43,9 @@
 </body>
 </html>
 <script>
+  document.getElementById("music").addEventListener("click", function() {
+    window.location.href = "/music/";
+  });
   document.getElementById("people").addEventListener("click", function() {
     window.location.href = "/people/";
   });
