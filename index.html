@@ -90,6 +90,10 @@ p {
   background: #121212;
   font-family: Arial, Helvetica, sans-serif;
   animation: bdr 0.8s ease 0s 1 normal forwards;
+  transition: background-color 0.8s ease, box-shadow 0.8s ease;
+}
+.border:hover {
+  box-shadow: 0 0 18px #ffc6f7;
 }
 a {
   text-decoration: none;
@@ -137,7 +141,7 @@ h1 {
   margin-top: -20px;
   margin-bottom: 10px;
   font-size: min(max(6vw, 60px), 120px);
-  transition: color 1.4s, text-shadow 1.4s ease;
+  transition: color 0.8s, text-shadow 0.8s ease;
   cursor: default;
   animation: bdr 0.8s ease 0s 1 normal forwards;
 }
@@ -149,7 +153,7 @@ h1 {
 }
 h1:hover {
   color: #ffc6f7;
-  text-shadow: 0 0 14px #ffc6f7;
+  text-shadow: 0 0 10px #ffc6f7;
 }
 .permanent-marker-regular {
   font-family: "Permanent Marker", cursive;
