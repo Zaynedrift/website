@@ -174,12 +174,6 @@
     transition: color 1.4s, text-shadow 1.4s ease;
     cursor: default;
   }
-  @media only screen and (max-width: 600px) {
-    h1 {
-      margin-bottom: 18px;
-      font-size: 50px;
-    }
-  }
   h1:hover {
     animation: h1shake 1s linear 1s 1 normal none;
     color: #ffffff;
@@ -229,6 +223,15 @@
   h3:hover {
     color: #ffffff;
     text-shadow: 0 0 14px #ffffff;
+  }
+  @media only screen and (max-width: 600px) {
+    h1 {
+      margin-bottom: 18px;
+      font-size: 50px;
+    }
+    button {
+      font-size: 12px;
+    }
   }
 </style>
 </html>
