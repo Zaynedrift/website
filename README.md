@@ -1,7 +1,7 @@
 # [zaynedrift.com](https://zaynedrift.com) 
 This repo contains the source code and assets to [zaynedrift.com](https://zaynedrift.com) 
 
-zaynedrift.com is now in Version **3.7**
+zaynedrift.com is now in Version **3.8.1**
 
 ## Additional Credits
 - [Vumacc](https://github.com/Vumacc) (Ideas & General Help)
