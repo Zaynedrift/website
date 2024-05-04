@@ -154,16 +154,18 @@
     box-shadow: 0 0 10px #ffc6f7;
   }
   .border {
-    border: 12px ridge #000000;
+    border: 1px solid #ffc6f7;
+    border-radius: 12px;
     text-align: center;
     width: 80%;
     margin: auto;
-    border-color: #000000;
     background: #121212;
     font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
+    animation: bdr 0.8s ease 0s 1 normal forwards;
+    transition: background-color 0.8s ease, box-shadow 0.8s ease;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   @keyframes bdr {
     0% {
