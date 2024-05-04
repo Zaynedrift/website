@@ -161,12 +161,6 @@ h1 {
   transition: color 1.4s, text-shadow 1.4s ease;
   cursor: default;
 }
-@media only screen and (max-width: 600px) {
-  h1 {
-    margin-bottom: 18px;
-    font-size: 48px;
-  }
-}
 h1:hover {
   animation: h1shake 1s linear 1s 1 normal none;
   color: #ffffff;
@@ -222,6 +216,15 @@ img.icon:hover {
   }
   .section:hover {
     box-shadow: 0 0 18px #ffc6f7;
+  }
+  @media only screen and (max-width: 600px) {
+    h1 {
+      margin-bottom: 18px;
+      font-size: 40px;
+    }
+    button {
+      font-size: 12px;
+    }
   }
 </style>
 </html>
