@@ -27,6 +27,16 @@
       <button onclick="window.location.href='/discord/'">Discord</button>
       <button onclick="window.location.href='/pages/'">Pages</button>
     </div><br>
+    <div class="border">
+      <p>The Dumbass Developer</p>
+      <div class="icon-container">
+        <a href="https://discord.com/users/1124956603104366623" target="_blank">
+          <img class="icon" src="https://zaynedrift.com/assets/icons/discord.png" alt="Discord"></a>
+      </div><br>
+      <div class="image">
+        <img src="https://zaynedrift.com/assets/people/vumacc.png" alt="Vumacc"/>
+      </div>
+    </div>
   </main>
 </body>
 <style>
@@ -146,6 +156,20 @@
       opacity: 1;
       transform: scale(1);
     }
+  }
+  .icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  img.icon {
+    max-width: 60px;
+    height: auto;
+    margin: 5px;
+    transition: transform 0.3s ease;
+  }
+  img.icon:hover {
+    transform: scale(1.1);
   }
 </style>
 </html>
