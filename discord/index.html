@@ -27,21 +27,30 @@
       <button onclick="window.location.href='/discord/'">Discord</button>
       <button onclick="window.location.href='/pages/'">Pages</button>
     </div><br>
-    <div>
+    <div class="border-container">
       <div class="border" id="1">
         <h3 class="header">Kawaii Femboi Discord</h3>
         <p>2250+ Members</p>
         <p>Server Owner</p>
+        <div class="image">
+          <img src="https://cdn.discordapp.com/icons/1098221738363465893/5badac1e136845ec53e6947ff40d68c1"/>
+        </div>
       </div><br>
       <div class="border" id="2">
-        <h3 class="header">Zayne's Community</h3>
+        <h3 class="header">Zayne's<br>Community</h3>
         <p>40+ Members</p>
         <p>Server Owner</p>
+        <div class="image">
+          <img src="https://cdn.discordapp.com/icons/1240155919740964874/358ec4df2fd3941888a9c47c9c9c9557"/>
+        </div>
       </div><br>
       <div class="border" id="3">
         <h3 class="header">Foreverably's Asylum</h3>
         <p>40+ Members</p>
         <p>Owner</p>
+        <div class="image">
+          <img src="https://cdn.discordapp.com/icons/1249757927783534592/4b4999e5bc8f7f48e2241643221d178f"/>
+        </div>
       </div><br>
     </div>
   </main>
@@ -72,19 +81,37 @@
     font-family: Arial, Helvetica, sans-serif;
     cursor: default;
   }
+  .border-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
   .border {
     border: 1px solid #ffc6f7;
     border-radius: 12px;
     text-align: center;
-    width: 80%;
-    margin: auto;
+    width: 60%;
     background: #121212;
     font-family: Arial, Helvetica, sans-serif;
     animation: bdr 0.8s ease 0s 1 normal forwards;
     transition: background-color 0.8s ease, box-shadow 0.8s ease;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .border:hover {
     box-shadow: 0 0 18px #ffc6f7;
+  }
+  @media only screen and (max-width: 800px) {
+    .border-container {
+      flex-wrap: wrap; 
+    }
+    .border {
+      width: 90%;
+      padding-left: 2px;
+      padding-right: 2px
+    }
   }
   a {
     text-decoration: none;
@@ -162,6 +189,17 @@
       opacity: 1;
       transform: scale(1);
     }
+  }
+  .image img {
+    height: auto;
+    text-align: center; 
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    display: flex;
+    border-radius: 24px;
   }
 </style>
 <script>
