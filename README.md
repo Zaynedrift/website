@@ -6,6 +6,7 @@ zaynedrift.com is now in Version **4.0**
 ## Additional Credits
 - [Vumacc](https://github.com/Vumacc) (Ideas & General Help)
 - [Dontmindme](https://github.com/dontmindme250) (Ideas & General Help)
+- [surgedevs](https://github.com/surgedevs) ([zayne.is-a-cut.ie](https://zayne.is-a-cut.ie) mirror)
 
 ## All Links
 - https://zaynedrift.com
