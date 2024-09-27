@@ -1,7 +1,7 @@
 # [zaynedrift.com](https://zaynedrift.com) 
 This repo contains the source code and assets to [zaynedrift.com](https://zaynedrift.com) 
 
-zaynedrift.com is now in Version **4.0**
+zaynedrift.com is now in Version **4.1**
 
 ## Additional Credits
 - [Vumacc](https://github.com/Vumacc) (Ideas & General Help)
@@ -10,8 +10,7 @@ zaynedrift.com is now in Version **4.0**
 
 ## All Links
 - https://zaynedrift.com
-- https://zayne.is-a-cut.ie
 
 ## Nerd Info
-- Programmed in Replit & Github with HTML, CSS & JS
-- Domain Managed in Cloudflare
+- Programmed in Github with HTML, CSS & JS
+- Domain Managed in Cloudflare and Cloudflare Pages
