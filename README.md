@@ -12,5 +12,6 @@ zaynedrift.com is now in Version **4.2**
 - https://zaynedrift.com
 
 ## Nerd Info
-- Programmed in Github with HTML, CSS & JS
-- Domain Managed in Cloudflare and Cloudflare Pages
+- Programmed in Github with HTML
+- Domain Managed in Cloudflare
+- Website hosted with Cloudflare Pages
