@@ -22,21 +22,19 @@
     <div class="buttons">
       <button onclick="window.location.href='/'">Home</button>
       <button onclick="window.location.href='/about/'">About Me</button>
-      <button onclick="window.location.href='/projects/'">Projects</button>
-      <button onclick="window.location.href='/music/'">Music</button>
-      <button onclick="window.location.href='/donate/'">Donate</button>
       <button onclick="window.location.href='/social/'">Socials</button>
       <button onclick="window.location.href='/discord/'">Discord</button>
       <button onclick="window.location.href='/pages/'">Other</button>
     </div><br>
     <div>
       <div class="border">
-        <p>Welcome to my website!</p>
-        <p>Please read my <a href="https://dni.zaynedrift.com">DNI List</a> before proceeding <3</p>
-      </div><br>
-      <div class="image">
-        <img src="https://cdn.discordapp.com/emojis/1148944265133695108.webp?animated=true" alt="Shiggy"/>
-      </div>
+        <div class="header">
+          <h3>Welcome to my website!</h3>
+        </div>
+        <div>
+          <p>Use the buttons to navigate! :3</p>
+          <p>Please read my <a href="https://dni.zaynedrift.com">DNI List</a> before proceeding <3</p>
+        </div>
     </div>
   </main>
 </body>
@@ -60,12 +58,6 @@
     margin: auto;
     padding: 10px;
   }
-  p {
-    text-align: center;
-    color: #ffc6f7;
-    font-family: Arial, Helvetica, sans-serif;
-    cursor: default;
-  }
   .border {
     border: 1px solid #ffc6f7;
     border-radius: 12px;
@@ -76,17 +68,36 @@
     font-family: Arial, Helvetica, sans-serif;
     animation: bdr 0.8s ease 0s 1 normal forwards;
     transition: background-color 0.8s ease, box-shadow 0.8s ease;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .border:hover {
     box-shadow: 0 0 18px #ffc6f7;
   }
+  p {
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+  }
+  .image img {
+    height: auto;
+    text-align: center; 
+    width: 90%;
+    margin: auto; 
+    display: flex;
+    border: #ffc6f7;
+    border-radius: 12px;
+    
+  }
   a {
     text-decoration: none;
-    color: #ff72eb;
-    transition: text-shadow 0.4s ease;
+    color: #ffc6f7;
+    transition: background-color 0.4s ease;
   }
   a:hover {
-    text-shadow: 0 0 3px #ff72eb;
+    color: #ffffff;
+    text-shadow: 0 0 3px #ffffff;
   }
   button {
     padding: 10px;
@@ -99,7 +110,7 @@
     transition: background-color 0.4s ease, box-shadow 0.4s ease, color 0.4s ease;
     font-family: Arial, Helvetica, sans-serif;
     animation: bdr 0.8s ease 0s 1 normal forwards;
-    font-size: min(max(6vw, 8px), 14px);
+    font-size: min(max(4vw, 14px), 20px);
   }
   button:hover {
     color: #000000;
@@ -112,13 +123,6 @@
     gap: 10px;
     justify-content: center;
     margin-top: -13px;
-  }
-  .image img {
-    height: auto;
-    text-align: center; 
-    width: 90%;
-    margin: auto; 
-    display: flex;
   }
   h1 {
     color: #ffc6f7;
@@ -133,15 +137,30 @@
   @media only screen and (max-width: 600px) {
     h1 {
       margin-bottom: 18px;
-      font-size: 50px;
     }
     button {
-      font-size: 12px;
+      font-size: 15px;
     }
-  }
+    .border {
+      width: 90%;
+    }
+    p {
+      font-size: 15px;
+    }
+  } 
   h1:hover {
     color: #ffc6f7;
     text-shadow: 0 0 10px #ffc6f7;
+  }
+  h3 {
+    text-decoration: none;
+    font-size: 31px;
+    text-align: center;
+    color: #ffffff;
+    transition: color 1.4s, text-shadow 1.4s ease;
+    margin-top: 4px;
+    margin-bottom: -8px;
+    cursor: default;
   }
   .header {
     font-family: "Permanent Marker", cursive;
