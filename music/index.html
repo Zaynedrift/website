@@ -16,36 +16,40 @@
 </head>
 <body>
   <main>
-    <div class="font">
+    <div class="header">
       <h1>Music</h1>
     </div>
     <div class="buttons">
       <button onclick="window.location.href='/'">Home</button>
-      <button onclick="window.location.href='/about/'">About Me</button>
-      <button onclick="window.location.href='/projects/'">Projects</button>
-      <button onclick="window.location.href='/music/'">Music</button>
-      <button onclick="window.location.href='/donate/'">Donate</button>
-      <button onclick="window.location.href='/social/'">Socials</button>
+      <button onclick="window.location.href='/about/'">About</button>
+      <button onclick="window.location.href='/social/'">Links</button>
       <button onclick="window.location.href='/discord/'">Discord</button>
       <button onclick="window.location.href='/pages/'">Other</button>
     </div><br>
-    <div class="border">
-      <p>♡ I make music mostly for fun ♡<br></p>
-      <div class="icon-container">
-        <a href="https://open.spotify.com/artist/5tN4WMZWV3DjbXhHPGchQF" target="_blank">
-          <img class="icon" src="https://zaynedrift.com/assets/icons/spotify.png" alt="Spotify"></a>
-        <a href="https://music.apple.com/us/artist/zaynedrift/1666506879" target="_blank">
-          <img class="icon" src="https://zaynedrift.com/assets/icons/applemusic.png" alt="Apple Music"></a>
-        <a href="https://www.youtube.com/channel/UCkXoZUiKofz75MXrQOfB1SQ" target="_blank">
-          <img class="icon" src="https://zaynedrift.com/assets/icons/youtube.png" alt="Youtube"></a>
-        <a href="https://soundcloud.com/zaynedrift" target="_blank">
-          <img class="icon" src="https://zaynedrift.com/assets/icons/soundcloud.png" alt="Soundcloud"></a>
+    <div>
+      <div class="border" onclick="window.location.href='https://open.spotify.com/artist/5tN4WMZWV3DjbXhHPGchQF?si=HytT2wD9RZ6u3iskjsgDBg'">
+        <div class="text">
+          <h3 class="header">Spotify</h3><br>
+          <p></p>
+        </div>
+        <div class="image">
+          <img src="https://zaynedrift.com/assets/icons/spotify.png"/>
+        </div>
       </div><br>
-    </div><br>
+      <div class="border" onclick="window.location.href='https://music.apple.com/au/artist/zaynedrift/1666506879'">
+        <div class="text">
+          <h3 class="header">Apple Music</h3><br>
+          <p></p>
+        </div>
+        <div class="image">
+          <img src="https://zaynedrift.com/assets/icons/applemusic.png"/>
+        </div>
+      </div><br>
+    </div>
   </main>
 </body>
 <style>
-  html {
+    html {
     height: 100%;
     margin: 0;
     background: #000000 url(https://zaynedrift.com/assets/web/background.jpg) center center/cover no-repeat padding-box;
@@ -65,32 +69,40 @@
     padding: 10px;
   }
   p {
-    text-align: center;
-    color: #ffc6f7;
+    text-align: left;
+    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     cursor: default;
-    font-size: 23px;
-  }
-  a {
-    text-decoration: none;
-    color: #ff0492;
-    transition: text-shadow 0.4s ease;
-  }
-  a:hover {
-    text-shadow: 0 0 3px #ff0492;
   }
   .border {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border: 1px solid #ffc6f7;
     border-radius: 12px;
     text-align: center;
-    width: 80%;
+    width: 70%;
     margin: auto;
     background: #121212;
     font-family: Arial, Helvetica, sans-serif;
     animation: bdr 0.8s ease 0s 1 normal forwards;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    transition: background-color 0.8s ease, box-shadow 0.8s ease;
+    padding-left: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+  }
+  .border:hover {
+    box-shadow: 0 0 18px #ffc6f7;
+  }
+  a {
+    text-decoration: none;
+    color: #ffc6f7;
+    transition: background-color 0.4s ease;
+  }
+  a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 3px #ffffff;
   }
   button {
     padding: 10px;
@@ -103,7 +115,7 @@
     transition: background-color 0.4s ease, box-shadow 0.4s ease, color 0.4s ease;
     font-family: Arial, Helvetica, sans-serif;
     animation: bdr 0.8s ease 0s 1 normal forwards;
-    font-size: min(max(6vw, 8px), 14px);
+    font-size: min(max(4vw, 14px), 20px);
   }
   button:hover {
     color: #000000;
@@ -117,13 +129,6 @@
     justify-content: center;
     margin-top: -13px;
   }
-  .image img {
-    max-width: 384px;
-    height: auto;
-    display: flex;
-    flex: auto;
-    justify-content: flex-start;
-  }
   h1 {
     color: #ffc6f7;
     text-align: center;
@@ -134,34 +139,38 @@
     cursor: default;
     animation: bdr 0.8s ease 0s 1 normal forwards;
   }
+  @media only screen and (max-width: 600px) {
+    h1 {
+      margin-bottom: 18px;
+    }
+    button {
+      font-size: 12px;
+    }
+    p {
+      font-size: 15px;
+    }
+    .image img {
+      border-radius: 24px;
+    }
+  } 
   h1:hover {
     color: #ffc6f7;
     text-shadow: 0 0 10px #ffc6f7;
   }
-  @media only screen and (max-width: 600px) {
-    h1 {
-      margin-bottom: 18px;
-      font-size: 50px;
-    }
+  h3 {
+    text-decoration: none;
+    font-size: min(max(7vw, 14px), 60px);
+    text-align: left;
+    color: #ffffff;
+    transition: color 1.4s, text-shadow 1.4s ease;
+    cursor: default;
+    margin-top: 2px;
+    margin-bottom: -10px;
   }
-  .font {
+  .header {
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
-  }
-  .icon-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  img.icon {
-    max-width: 60px;
-    height: auto;
-    margin: 5px;
-    transition: transform 0.3s ease;
-  }
-  img.icon:hover {
-    transform: scale(1.1);
   }
   @keyframes bdr {
     0% {
@@ -173,5 +182,28 @@
       transform: scale(1);
     }
   }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  max-height: 80%;
+  margin-right: 20px;
+  margin-left: -20px;
+}
+
+.image img {
+  width: 60%;
+  height: auto;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 12px;
+}
 </style>
 </html>

@@ -16,16 +16,13 @@
 </head>
 <body>
   <main>
-    <div class="permanent-marker-regular">
+    <div class="header">
       <h1>Social Media</h1>
     </div>    
     <div class="buttons">
       <button onclick="window.location.href='/'">Home</button>
-      <button onclick="window.location.href='/about/'">About Me</button>
-      <button onclick="window.location.href='/projects/'">Projects</button>
-      <button onclick="window.location.href='/music/'">Music</button>
-      <button onclick="window.location.href='/donate/'">Donate</button>
-      <button onclick="window.location.href='/social/'">Socials</button>
+      <button onclick="window.location.href='/about/'">About</button>
+      <button onclick="window.location.href='/social/'">Links</button>
       <button onclick="window.location.href='/discord/'">Discord</button>
       <button onclick="window.location.href='/pages/'">Other</button>
     </div><br>
@@ -83,6 +80,28 @@
     margin: auto;
     padding: 10px;
   }
+  p {
+    text-align: left;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+  }
+  .border {
+    border: 1px solid #ffc6f7;
+    border-radius: 12px;
+    text-align: center;
+    width: 58%;
+    margin: auto;
+    background: #121212;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: bdr 0.8s ease 0s 1 normal forwards;
+    transition: background-color 0.8s ease, box-shadow 0.8s ease;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .border:hover {
+    box-shadow: 0 0 18px #ffc6f7;
+  }
   a {
     text-decoration: none;
     color: #ffc6f7;
@@ -103,7 +122,7 @@
     transition: background-color 0.4s ease, box-shadow 0.4s ease, color 0.4s ease;
     font-family: Arial, Helvetica, sans-serif;
     animation: bdr 0.8s ease 0s 1 normal forwards;
-    font-size: min(max(6vw, 8px), 14px);
+    font-size: min(max(4vw, 14px), 20px);
   }
   button:hover {
     color: #000000;
@@ -122,28 +141,53 @@
     text-align: center;
     margin-top: -20px;
     margin-bottom: 10px;
-    font-size: min(max(6vw, 40px), 120px);
+    font-size: min(max(6vw, 60px), 120px);
     transition: color 0.8s, text-shadow 0.8s ease;
     cursor: default;
     animation: bdr 0.8s ease 0s 1 normal forwards;
   }
+  @media only screen and (max-width: 600px) {
+    h1 {
+      margin-bottom: 18px;
+    }
+    button {
+      font-size: 12px;
+    }
+    .border {
+      width: 70%;
+    }
+    p {
+      font-size: 15px;
+    }
+  } 
   h1:hover {
     color: #ffc6f7;
     text-shadow: 0 0 10px #ffc6f7;
   }
-  .permanent-marker-regular {
+  h3 {
+    text-decoration: none;
+    font-size: min(max(6vw, 28px), 42px);
+    text-align: left;
+    color: #ffffff;
+    transition: color 1.4s, text-shadow 1.4s ease;
+    margin-top: 4px;
+    margin-bottom: -8px;
+    cursor: default;
+  }
+  .header {
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
   }
-  h3 {
-    text-decoration: none;
-    font-size: min(max(3vw, 30px), 54px);
-    text-align: center;
-    color: #ffc6f7;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    cursor: default;
+  @keyframes bdr {
+    0% {
+      opacity: 0;
+      transform: scale(0.6);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
   .icon-container {
     display: flex;
@@ -175,32 +219,6 @@
   }
   .section:hover {
     box-shadow: 0 0 18px #ffc6f7;
-  }
-  @media only screen and (max-width: 600px) {
-    h1 {
-      margin-bottom: 18px;
-      font-size: 40px;
-    }
-    button {
-      font-size: 12px;
-    }
-  }
-  @keyframes bdr {
-    0% {
-      opacity: 0;
-      transform: scale(0.6);
-    }
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  .image img {
-    height: auto;
-    text-align: center; 
-    width: 60%;
-    margin: auto; 
-    display: flex;
   }
 </style>
 </html>

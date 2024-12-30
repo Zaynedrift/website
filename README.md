@@ -1,16 +1,13 @@
 # [zaynedrift.com](https://zaynedrift.com) 
-This repo contains the source code and assets to [zaynedrift.com](https://zaynedrift.com) 
+This repository contains the source code and assets for [zaynedrift.com](https://zaynedrift.com), my personal website
 
-zaynedrift.com is now in Version **4.2**
+zaynedrift.com is now in Version **5.0**
 
 ## Additional Credits
 - [Vumacc](https://github.com/Vumacc) (Ideas & General Help)
 - [Dontmindme](https://github.com/dontmindme250) (Ideas & General Help)
 
-## All Links
-- https://zaynedrift.com
-
 ## Nerd Info
-- Programmed in Github with HTML
+- Programmed in Github & VSCode with HTML
 - Domain Managed in Cloudflare
 - Website hosted with Cloudflare Pages
