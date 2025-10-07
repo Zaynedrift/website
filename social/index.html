@@ -28,29 +28,37 @@
     </div><br>
     <div class=section>
       <div class="icon-container">
-        <!-- Youtube -->
-        <a href="https://youtube.com/@zaynedrift" target="_blank">
-          <img class="icon" src="https://zaynedrift.com/assets/icons/youtube.png" alt="Youtube">
-        </a>
-        <!-- Twitch -->
-        <a href="https://twitch.tv/zaynedrift" target="_blank">
-          <img class="icon" src="https://zaynedrift.com/assets/icons/twitch.png" alt="Twitch">
-        </a>
-        <!-- Instagram -->
-        <a href="https://instagram.com/zaynedrift" target="_blank">
-          <img class="icon" src="https://zaynedrift.com/assets/icons/instagram.png" alt="Instagram">
+        <!-- Apple Music -->
+        <a href="https://music.apple.com/au/artist/zaynedrift/1666506879" target="_blank">
+          <img class="icon" src="https://zaynedrift.com/assets/icons/applemusic.png" alt="Apple Music">
         </a>
         <!-- Bluesky -->
         <a href="https://bsky.app/profile/zaynedrift.obl.ong" target="_blank">
           <img class="icon" src="https://zaynedrift.com/assets/icons/bluesky.png" alt="Bluesky">
         </a>
+        <!-- Github -->
+        <a href="https://github.com/zaynedrift" target="_blank">
+          <img class="icon" src="https://zaynedrift.com/assets/icons/github2.png" alt="Github">
+        </a>
+        <!-- Instagram -->
+        <a href="https://instagram.com/zaynedrift" target="_blank">
+          <img class="icon" src="https://zaynedrift.com/assets/icons/instagram.png" alt="Instagram">
+        </a>
+        <!-- Spotify -->
+        <a href="https://open.spotify.com/artist/5tN4WMZWV3DjbXhHPGchQF" target="_blank">
+          <img class="icon" src="https://zaynedrift.com/assets/icons/spotify.png" alt="Spotify">
+        </a>
         <!-- Tiktok -->
         <a href="https://www.tiktok.com/@zaynedrift" target="_blank">
           <img class="icon" src="https://zaynedrift.com/assets/icons/tiktok.png" alt="Tiktok">
         </a>
-        <!-- Github -->
-        <a href="https://github.com/zaynedrift" target="_blank">
-          <img class="icon" src="https://zaynedrift.com/assets/icons/github2.png" alt="Github">
+        <!-- Twitch -->
+        <a href="https://twitch.tv/zaynedrift" target="_blank">
+          <img class="icon" src="https://zaynedrift.com/assets/icons/twitch.png" alt="Twitch">
+        </a>
+        <!-- Youtube -->
+        <a href="https://youtube.com/@zaynedrift" target="_blank">
+          <img class="icon" src="https://zaynedrift.com/assets/icons/youtube.png" alt="Youtube">
         </a>
       </div>
     </div><br><br>
@@ -186,9 +194,9 @@
     }
   }
   .icon-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
   }
   img.icon {
     max-width: 60px;
